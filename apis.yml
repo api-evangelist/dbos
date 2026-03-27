@@ -1,0 +1,41 @@
+aid: dbos
+name: DBOS
+description: >-
+  DBOS is a lightweight durable execution library built on Postgres for
+  building resilient workflows and API compositions with TypeScript and Python.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API Composition
+  - Durable Execution
+  - Workflow
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/dbos/refs/heads/main/apis.yml
+created: '2026-03-27'
+modified: '2026-03-27'
+specificationVersion: '0.19'
+apis:
+  - aid: dbos:dbos
+    name: DBOS
+    description: >-
+      DBOS is a lightweight durable execution library built on Postgres for
+      building resilient workflows and API compositions with TypeScript and Python.
+    humanURL: https://www.dbos.dev/
+    tags:
+      - API Composition
+      - Durable Execution
+    properties:
+      - type: Documentation
+        url: https://docs.dbos.dev/
+      - type: Getting Started
+        url: https://docs.dbos.dev/quickstart
+common:
+  - type: Website
+    url: https://www.dbos.dev/
+  - type: Documentation
+    url: https://docs.dbos.dev/
+  - type: GitHub Organization
+    url: https://github.com/dbos-inc
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
