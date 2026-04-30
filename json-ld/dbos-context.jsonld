@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "dbos": "https://docs.dbos.dev/python/reference/",
+    "Workflow": {
+      "@id": "dbos:decorators",
+      "@context": {
+        "name": "https://schema.org/name",
+        "max_recovery_attempts": "https://schema.org/maxValue",
+        "serialization_type": "https://schema.org/encodingFormat",
+        "validate_args": "https://schema.org/option"
+      }
+    },
+    "Step": {
+      "@id": "dbos:decorators",
+      "@context": {
+        "name": "https://schema.org/name",
+        "retries_allowed": "https://schema.org/option",
+        "interval_seconds": "https://schema.org/duration",
+        "max_attempts": "https://schema.org/maxValue",
+        "backoff_rate": "https://schema.org/value"
+      }
+    },
+    "Transaction": {
+      "@id": "dbos:decorators",
+      "@context": {
+        "name": "https://schema.org/name",
+        "isolation_level": "https://schema.org/additionalType"
+      }
+    },
+    "Scheduled": {
+      "@id": "dbos:decorators",
+      "@context": {
+        "cron": "https://schema.org/scheduledTime"
+      }
+    },
+    "KafkaConsumer": {
+      "@id": "dbos:decorators",
+      "@context": {
+        "topics": "https://schema.org/about",
+        "config": "https://schema.org/additionalProperty",
+        "in_order": "https://schema.org/option"
+      }
+    },
+    "Queue": {
+      "@id": "dbos:queues",
+      "@context": {
+        "name": "https://schema.org/name",
+        "concurrency": "https://schema.org/maxValue",
+        "rate_limit": "https://schema.org/value"
+      }
+    }
+  }
+}

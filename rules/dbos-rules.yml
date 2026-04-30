@@ -1,0 +1,36 @@
+extends:
+  - spectral:oas
+rules:
+  dbos-workflow-decorator-named:
+    description: Workflow decorators should always carry an explicit name.
+    given: $.components.schemas.Workflow.properties.name
+    severity: warn
+    then:
+      function: truthy
+  dbos-step-retry-bounds:
+    description: Step retries must have max_attempts and backoff_rate.
+    given: $.components.schemas.Step
+    severity: warn
+    then:
+      field: properties
+      function: truthy
+  dbos-transaction-isolation-enum:
+    description: Transaction isolation level must be SERIALIZABLE, REPEATABLE READ, or READ COMMITTED.
+    given: $.components.schemas.Transaction.properties.isolation_level
+    severity: error
+    then:
+      field: enum
+      function: truthy
+  dbos-scheduled-cron:
+    description: Scheduled workflows must define a cron expression.
+    given: $.components.schemas.Scheduled.properties.cron
+    severity: error
+    then:
+      function: truthy
+  dbos-info-contact:
+    description: API info should include a contact for the DBOS project.
+    given: $.info
+    severity: warn
+    then:
+      field: contact
+      function: truthy

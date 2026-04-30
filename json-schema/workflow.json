@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/dbos/main/json-schema/workflow.json",
+  "title": "DBOS Workflow",
+  "description": "Configuration for a function decorated with DBOS.workflow.",
+  "type": "object",
+  "properties": {
+    "name": {"type": "string", "description": "Stable workflow name used for tracking and recovery."},
+    "max_recovery_attempts": {"type": "integer", "minimum": 0, "description": "Maximum recovery attempts after worker failure."},
+    "serialization_type": {"type": "string", "enum": ["json", "pickle"], "description": "Argument serialization format."},
+    "validate_args": {"type": "boolean", "description": "Whether to type-check arguments at runtime."}
+  }
+}

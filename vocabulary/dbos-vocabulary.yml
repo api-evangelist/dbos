@@ -1,0 +1,57 @@
+name: DBOS Vocabulary
+description: >-
+  Shared vocabulary of terms used across DBOS Transact and DBOS Cloud for
+  durable execution backed by Postgres.
+terms:
+  - term: Workflow
+    definition: >-
+      A function decorated with DBOS.workflow that runs to completion
+      durably, surviving process and node failures.
+  - term: Step
+    definition: >-
+      An idempotent unit of work inside a workflow, decorated with
+      DBOS.step, automatically checkpointed and retryable.
+  - term: Transaction
+    definition: >-
+      A workflow operation decorated with DBOS.transaction that wraps
+      database work in a single ACID transaction.
+  - term: Scheduled Workflow
+    definition: >-
+      A workflow decorated with DBOS.scheduled and a cron expression
+      that runs exactly once per scheduled interval.
+  - term: Queue
+    definition: >-
+      A durable, distributed queue persisted in Postgres for enqueueing
+      workflows and tasks.
+  - term: Communicator
+    definition: >-
+      An interaction with an external service performed inside a step
+      with at-least-once delivery semantics.
+  - term: Recovery Attempt
+    definition: >-
+      A bounded retry of a workflow after a worker failure, controlled
+      by max_recovery_attempts.
+  - term: Idempotency Key
+    definition: >-
+      A user-provided key used to deduplicate workflow invocations and
+      guarantee exactly-once execution.
+  - term: Kafka Consumer
+    definition: >-
+      A workflow decorated with DBOS.kafka_consumer that processes
+      partitioned Kafka topics with ordering guarantees.
+  - term: DBOSConfiguredInstance
+    definition: >-
+      A base class for stateful workflow instances tracked by name for
+      recovery.
+  - term: DBOS Cloud
+    definition: >-
+      The managed DBOS hosting platform that runs workflows, queues, and
+      scheduled jobs serverlessly.
+  - term: Application
+    definition: >-
+      A deployed unit on DBOS Cloud containing one or more workflows
+      and steps.
+  - term: Postgres Backing Store
+    definition: >-
+      The Postgres database used by DBOS to persist workflow state,
+      checkpoints, and queues.

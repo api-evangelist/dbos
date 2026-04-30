@@ -1,0 +1,46 @@
+name: DBOS Capabilities
+description: >-
+  Capabilities exposed by DBOS Transact libraries and DBOS Cloud for
+  building durable Postgres-backed workflows.
+capabilities:
+  - name: Durable Workflows
+    description: Run workflows that survive process and node failures via DBOS.workflow.
+    api: dbos:dbos
+  - name: Idempotent Steps
+    description: Checkpoint workflow steps for automatic retry with DBOS.step.
+    api: dbos:dbos
+  - name: ACID Transactions
+    description: Wrap database operations in serializable transactions with DBOS.transaction.
+    api: dbos:dbos
+  - name: Scheduled Jobs
+    description: Run workflows on a cron schedule with DBOS.scheduled.
+    api: dbos:dbos
+  - name: Durable Queues
+    description: Enqueue and consume tasks with Postgres-backed durable queues.
+    api: dbos:dbos
+  - name: Kafka Consumers
+    description: Consume Kafka topics with exactly-once semantics via DBOS.kafka_consumer.
+    api: dbos:dbos
+  - name: Role-Based Access
+    description: Restrict workflow access with DBOS.required_roles.
+    api: dbos:dbos
+  - name: Workflow Recovery
+    description: Resume workflows after failure with bounded recovery attempts.
+    api: dbos:dbos
+  - name: Idempotency Keys
+    description: Deduplicate invocations using caller-supplied idempotency keys.
+    api: dbos:dbos
+  - name: DBOS Cloud Hosting
+    description: Deploy workflows serverlessly on the managed DBOS Cloud platform.
+    api: dbos:dbos
+use_cases:
+  - name: Reliable API composition
+    description: Coordinate multi-step calls to external APIs with at-least-once guarantees.
+  - name: Long-running business workflows
+    description: Implement onboarding, billing, and approval flows that span hours or days.
+  - name: Event-driven processing
+    description: Process Kafka or queue events exactly once with durable state.
+  - name: Scheduled batch jobs
+    description: Replace cron with code-defined scheduled workflows.
+  - name: Resilient AI agent orchestration
+    description: Drive multi-step AI tool use that must survive failures.
