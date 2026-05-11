@@ -90,6 +90,10 @@ common:
     url: capabilities/dbos-capabilities.yml
   - type: Rules
     url: rules/dbos-rules.yml
+  - type: Integrations
+    url: https://www.dbos.dev/partners
+integrations:
+  - name: DBOS -
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
