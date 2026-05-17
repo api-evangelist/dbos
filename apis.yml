@@ -19,7 +19,7 @@ url: >-
 created: '2026-03-27'
 modified: '2026-04-28'
 specificationVersion: '0.19'
-xType: company
+kind: company
 position: Consumer
 access: 3rd-Party
 apis:
@@ -40,13 +40,13 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.dbos.dev/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://docs.dbos.dev/quickstart
       - type: Python Reference
         url: https://docs.dbos.dev/python/reference/decorators
       - type: TypeScript Reference
         url: https://docs.dbos.dev/typescript/reference/decorators
-      - type: GitHub Repository
+      - type: GitHubRepository
         url: https://github.com/dbos-inc/dbos-transact-py
       - type: JSONSchema
         url: json-schema/workflow.json
@@ -72,7 +72,7 @@ common:
     url: https://www.dbos.dev/
   - type: Documentation
     url: https://docs.dbos.dev/
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/dbos-inc
   - type: Console
     url: https://console.dbos.dev/
@@ -82,7 +82,7 @@ common:
     url: https://www.dbos.dev/blog
   - type: Discord
     url: https://discord.gg/dbos
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/dbos-context.jsonld
   - type: Vocabulary
     url: vocabulary/dbos-vocabulary.yml
