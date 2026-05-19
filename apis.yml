@@ -17,7 +17,7 @@ tags:
 url: >-
   https://raw.githubusercontent.com/api-evangelist/dbos/refs/heads/main/apis.yml
 created: '2026-03-27'
-modified: '2026-04-28'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 kind: company
 position: Consumer
@@ -92,6 +92,9 @@ common:
     url: rules/dbos-rules.yml
   - type: Integrations
     url: https://www.dbos.dev/partners
+  - name: MCP Server
+    url: https://github.com/dbos-inc/dbos-mcp
+    type: MCPServer
 integrations:
   - name: DBOS -
 maintainers:
