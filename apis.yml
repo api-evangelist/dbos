@@ -68,6 +68,8 @@ apis:
       - type: Console
         url: https://console.dbos.dev/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/dbos-inc
   - type: Website
     url: https://www.dbos.dev/
   - type: Documentation
