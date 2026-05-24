@@ -97,6 +97,8 @@ common:
   - name: MCP Server
     url: https://github.com/dbos-inc/dbos-mcp
     type: MCPServer
+  - type: LLMsTxt
+    url: https://docs.dbos.dev/llms.txt
 integrations:
   - name: DBOS -
 maintainers:
