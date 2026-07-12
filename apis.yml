@@ -68,6 +68,8 @@ apis:
       - type: Console
         url: https://console.dbos.dev/
 common:
+  - type: DomainSecurity
+    url: security/dbos-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/dbos-inc
   - type: Website

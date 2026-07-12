@@ -1,0 +1,22 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.dbos.dev
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 17 21:14:28 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: docs.dbos.dev
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 24 13:40:49 2026 GMT
+  hsts: false
+domains:
+- domain: dbos.dev
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
