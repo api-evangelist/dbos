@@ -80,6 +80,15 @@ apis:
       - type: Console
         url: https://console.dbos.dev/
 common:
+  - type: IssueTracker
+    url: https://github.com/dbos-inc/dbos-transact-py/issues
+  - type: Releases
+    url: https://github.com/dbos-inc/dbos-transact-py/releases
+  - type: ContributionGuide
+    url: https://github.com/dbos-inc/dbos-transact-py/blob/main/CONTRIBUTING.md
+  - type: License
+    name: MIT
+    url: https://github.com/dbos-inc/dbos-transact-py/blob/main/LICENSE
   - type: DomainSecurity
     url: security/dbos-domain-security.yml
   - type: LinkedIn
@@ -102,8 +111,6 @@ common:
     url: json-ld/dbos-context.jsonld
   - type: Vocabulary
     url: vocabulary/dbos-vocabulary.yml
-  - type: Capabilities
-    url: capabilities/dbos-capabilities.yml
   - type: Rules
     url: rules/dbos-rules.yml
   - type: Integrations
