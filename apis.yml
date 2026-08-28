@@ -6,6 +6,19 @@ description: >-
   The core library (DBOS Transact) is available for Python, TypeScript,
   Go, and Java, with a managed serverless runtime offered as DBOS Cloud.
 type: Index
+deliveryModel:
+  model: open-core
+  license: MIT
+  open_source: true
+  commercial: true
+  callable_host: false
+  label: Open core · an OSS project plus a commercial hosted product
+  confidence: high
+  source:
+  - license
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
