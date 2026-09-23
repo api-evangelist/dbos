@@ -1,0 +1,29 @@
+# Front Door AI Index — dbos — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: dbos
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.dbos.dev
+  final_host: www.dbos.dev
+  ownership: own
+  owner: dbos
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 22
+  host_score: 22
+  density: 13.71
+  words: 1605
+  tiers:
+    agentic: 4
+    core: 16
+    model: 2
+  ambiguous: 19
+  top_terms:
+    agent: 19
+    AI: 16
+    AI agent: 3
+    OpenAI: 2
+    agentic: 1
