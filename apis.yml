@@ -32,10 +32,14 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dbos.png
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-25
+x-docs-hosting: github-pages
 tags:
   - API Composition
   - Durable Execution
-  - Postgres
+  - PostgreSQL
   - Queues
   - Scheduled Jobs
   - Workflows
