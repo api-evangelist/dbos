@@ -1,4 +1,4 @@
-# DBOS (dbos)
+# DBOS
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,48 +66,135 @@
 
 DBOS is a durable execution platform built on Postgres for running resilient workflows, scheduled jobs, durable queues, and Kafka consumers. The core library (DBOS Transact) is available for Python, TypeScript, Go, and Java, with a managed serverless runtime offered as DBOS Cloud.
 
-**URL:** [Visit APIs.yml URL](https://raw.githubusercontent.com/api-evangelist/dbos/refs/heads/main/apis.yml)
+**Areas:** API Composition · Durable Execution · PostgreSQL · Queues · Scheduled Jobs · Workflows
 
-## Scope
+## DBOS on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
-- **xType:** company
+Everything profiled for DBOS is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/dbos/](https://apis.io/providers/dbos/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- API Composition, Durable Execution, Postgres, Queues, Scheduled Jobs, Workflow
+- [DBOS Transact](https://apis.io/apis/dbos/dbos/) — DBOS Transact is a durable execution library that decorates application functions with workflow, step, transaction, scheduled, and Kafka consumer semantics,…
+- [DBOS Cloud](https://apis.io/apis/dbos/dbos-cloud/) — DBOS Cloud is the managed, serverless hosting platform for DBOS workflows, queues, and scheduled jobs. The CLI deploys and manages DBOS applications and…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-27
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### MCP servers (1)
 
-### DBOS Transact
-Durable execution library decorating functions with workflow, step, transaction, scheduled, and Kafka consumer semantics. Persists state to Postgres. SDKs for Python, TypeScript, Go, and Java.
+Model Context Protocol servers that expose the API to agents.
 
-- [Documentation](https://docs.dbos.dev/)
-- [Python Reference](https://docs.dbos.dev/python/reference/decorators)
-- [JSONSchema](json-schema/workflow.json)
+- [MCP Server](https://apis.io/servers/dbos/mcp-server/)
 
-### DBOS Cloud
-Managed serverless hosting for DBOS applications with deployment CLI and observability UI.
+#### JSON Schema (1)
 
-## Common Properties
+The data models the API reads and writes.
+
+- [DBOS Workflow](https://apis.io/schemas/dbos/workflow/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Dbos Context](https://apis.io/jsonld/dbos/dbos-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [DBOS Vocabulary](https://apis.io/vocabularies/dbos/dbos-vocabulary/)
+
+#### Governance rules (2)
+
+Spectral rulesets for the provider's contracts.
+
+- [DBOS — jsonschema rules](https://apis.io/rules/dbos/dbos-jsonschema-spectral-rules/)
+- [DBOS API Rules](https://apis.io/rules/dbos/dbos-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Dbos Domain Security](https://apis.io/security/dbos/dbos-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Dbos Plans Pricing](https://apis.io/plans/dbos/dbos-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Dbos Rate Limits](https://apis.io/rate-limits/dbos/dbos-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Dbos Finops](https://apis.io/finops/dbos/dbos-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.dbos.dev/)
 - [Documentation](https://docs.dbos.dev/)
-- [GitHub Organization](https://github.com/dbos-inc)
-- [Console](https://console.dbos.dev/)
-- [JSON-LD](json-ld/dbos-context.jsonld)
-- [Vocabulary](vocabulary/dbos-vocabulary.yml)
-- [Capabilities](capabilities/dbos-capabilities.yml)
-- [Rules](rules/dbos-rules.yml)
+- [Pricing](https://www.dbos.dev/pricing)
+- [Blog](https://www.dbos.dev/blog)
+- [GitHub](https://github.com/dbos-inc)
 
-## Maintainers
+## API Evangelist rating
 
-- **FN:** Kin Lane
-- **Email:** kin@apievangelist.com
+**Kin Score 27.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 63.3 |
+| Contract quality | 13.9 |
+| Contract governance | 27.3 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 18.4 |
+
+**Agent readiness 3.7** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/dbos/](https://apis.io/providers/dbos/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for DBOS: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/dbos/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
